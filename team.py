@@ -69,11 +69,11 @@ st.title("Predictive Maintenance for Governor Control")
 
 # Input แบบกรอกมือ
 st.sidebar.subheader("Manual Input Parameters")
-man_gv = st.sidebar.number_input("GV POSITION (%)", min_value=0.0, max_value=100.0, value=50.0, step=0.1)
-man_rb = st.sidebar.number_input("RB POSITION (ｰ)", min_value=0.0, max_value=90.0, value=45.0, step=0.1)
-man_gen_mw = st.sidebar.number_input("GEN MW (%)", min_value=0.0, max_value=100.0, value=50.0, step=0.1)
-man_gen_hz = st.sidebar.number_input("GEN Hz (%)", min_value=47.0, max_value=53.0, value=50.0, step=0.1)
-man_turbine_speed = st.sidebar.number_input("TURBINE SPEED (%)", min_value=95.0, max_value=105.0, value=100.0, step=0.1)
+man_gv = st.sidebar.number_input("GV POSITION (%)")
+man_rb = st.sidebar.number_input("RB POSITION (ｰ)")
+man_gen_mw = st.sidebar.number_input("GEN MW (%)")
+man_gen_hz = st.sidebar.number_input("GEN Hz (%)")
+man_turbine_speed = st.sidebar.number_input("TURBINE SPEED (%)")
 
 if st.sidebar.button("Predict from Manual Input"):
     manual_df = pd.DataFrame([{
